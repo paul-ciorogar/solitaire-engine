@@ -1,0 +1,26 @@
+{
+    "name": "solitaire-engine",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/solitaire-engine.umd.cjs",
+    "module": "./dist/solitaire-engine.js",
+    "exports": {
+        ".": {
+            "import": "./dist/solitaire-engine.js",
+            "require": "./dist/solitaire-engine.umd.cjs"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "typescript": "^4.6.4",
+        "vite": "^3.0.7"
+    }
+}
