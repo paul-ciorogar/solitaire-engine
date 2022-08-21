@@ -1,26 +1,33 @@
 {
-    "name": "solitaire-engine",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "files": [
-        "dist"
-    ],
-    "main": "./dist/solitaire-engine.umd.cjs",
-    "module": "./dist/solitaire-engine.js",
-    "exports": {
-        ".": {
-            "import": "./dist/solitaire-engine.js",
-            "require": "./dist/solitaire-engine.umd.cjs"
-        }
-    },
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build",
-        "preview": "vite preview"
-    },
-    "devDependencies": {
-        "typescript": "^4.6.4",
-        "vite": "^3.0.7"
+  "name": "solitaire-engine",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/solitaire-engine.umd.cjs",
+  "module": "./dist/solitaire-engine.js",
+  "exports": {
+    ".": {
+      "import": "./dist/solitaire-engine.js",
+      "require": "./dist/solitaire-engine.umd.cjs"
     }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@types/jest": "^28.1.7",
+    "babel-jest": "^28.1.3",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.7"
+  }
 }
